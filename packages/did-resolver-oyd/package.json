@@ -1,0 +1,20 @@
+{
+  "name": "@ownyourdata/did-resolver-oyd",
+  "version": "0.0.1",
+  "description": "plugin for management of did:oyd identifiers",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [
+    "DID",
+    "OwnYourData"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "did-resolver": "^4.1.0",
+    "oydid-did-resolver": "^0.2.0"
+  }
+}
