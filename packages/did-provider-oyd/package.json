@@ -1,0 +1,16 @@
+{
+  "name": "@ownyourdata/did-provider-oyd",
+  "version": "0.0.1",
+  "description": "plugin for management of did:oyd identifiers",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [
+    "DID",
+    "OwnYourData"
+  ],
+  "author": "",
+  "license": "MIT"
+}
