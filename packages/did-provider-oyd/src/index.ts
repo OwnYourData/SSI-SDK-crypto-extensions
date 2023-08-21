@@ -4,4 +4,4 @@
  * @packageDocumentation
  */
 export * from './types'
-export { OydDIDProvider } from './oyd-did-provider.js'
+export { OydDIDProvider } from './oyd-did-provider'
