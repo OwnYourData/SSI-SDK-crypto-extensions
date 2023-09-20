@@ -329,6 +329,37 @@ importers:
         specifier: 4.9.5
         version: 4.9.5
 
+  packages/did-provider-oyd:
+    dependencies:
+      '@sphereon/ssi-sdk-ext.did-utils':
+        specifier: workspace:^
+        version: link:../did-utils
+      '@sphereon/ssi-sdk-ext.key-utils':
+        specifier: workspace:^
+        version: link:../key-utils
+      '@veramo/core':
+        specifier: 4.2.0
+        version: 4.2.0(patch_hash=c5oempznsz4br5w3tcuk2i2mau)
+      '@veramo/did-manager':
+        specifier: 4.2.0
+        version: 4.2.0
+      axios:
+        specifier: ^1.4.0
+        version: 1.4.0(debug@4.3.4)
+      debug:
+        specifier: ^4.3.4
+        version: 4.3.4
+    devDependencies:
+      '@types/axios':
+        specifier: ^0.14.0
+        version: 0.14.0(debug@4.3.4)
+      '@types/debug':
+        specifier: ^4.1.8
+        version: 4.1.8
+      typescript:
+        specifier: 4.9.5
+        version: 4.9.5
+
   packages/did-provider-web:
     dependencies:
       '@sphereon/ssi-sdk-ext.did-utils':
@@ -449,6 +480,9 @@ importers:
 
   packages/did-resolver-oyd:
     dependencies:
+      did-resolver:
+        specifier: ^4.1.0
+        version: 4.1.0
       oydid-did-resolver:
         specifier: ^0.2.0
         version: 0.2.0
@@ -4912,6 +4946,15 @@ packages:
     resolution: {integrity: sha512-ebDJ9b0e702Yr7pWgB0jzm+CX4Srzz8RcXtLJDJB+BSccqMa36uyH/zUsSYao5+BD1ytv3k3rPYCq4mAE1hsXA==}
     dev: true
 
+  /@types/axios@0.14.0(debug@4.3.4):
+    resolution: {integrity: sha512-KqQnQbdYE54D7oa/UmYVMZKq7CO4l8DEENzOKc4aBRwxCXSlJXGz83flFx5L7AWrOQnmuN3kVsRdt+GZPPjiVQ==}
+    deprecated: This is a stub types definition for axios (https://github.com/mzabriskie/axios). axios provides its own type definitions, so you don't need @types/axios installed!
+    dependencies:
+      axios: 1.4.0(debug@4.3.4)
+    transitivePeerDependencies:
+      - debug
+    dev: true
+
   /@types/babel__core@7.20.1:
     resolution: {integrity: sha512-aACu/U/omhdk15O4Nfb+fHgH/z3QsfQzpnvRZhYhThms83ZnAOZz7zZAWO7mn2yyNQaA4xTO8GLK3uqFU4bYYw==}
     dependencies:
@@ -6188,7 +6231,7 @@ packages:
       - debug
     dev: false
 
-  /axios@1.4.0:
+  /axios@1.4.0(debug@4.3.4):
     resolution: {integrity: sha512-S4XCWMEmzvo64T9GfvQDOXgYRDJ/wsSZc7Jvdgx5u1sd0JwsuPLqb3SYmusag+edF6ziyMensPVqLTSc1PiSEA==}
     dependencies:
       follow-redirects: 1.15.2(debug@4.3.4)
@@ -6196,7 +6239,6 @@ packages:
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
-    dev: true
 
   /b64-lite@1.4.0:
     resolution: {integrity: sha512-aHe97M7DXt+dkpa8fHlCcm1CnskAHrJqEfMI0KN7dwqlzml/aUe1AGt6lk51HzrSfVD67xOso84sOpr+0wIe2w==}
@@ -8943,7 +8985,6 @@ packages:
       asynckit: 0.4.0
       combined-stream: 1.0.8
       mime-types: 2.1.35
-    dev: true
 
   /forwarded@0.2.0:
     resolution: {integrity: sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==}
@@ -12961,7 +13002,7 @@ packages:
       '@yarnpkg/lockfile': 1.1.0
       '@yarnpkg/parsers': 3.0.0-rc.48.1
       '@zkochan/js-yaml': 0.0.6
-      axios: 1.4.0
+      axios: 1.4.0(debug@4.3.4)
       chalk: 4.1.2
       cli-cursor: 3.1.0
       cli-spinners: 2.6.1
@@ -13899,7 +13940,6 @@ packages:
 
   /proxy-from-env@1.1.0:
     resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
-    dev: true
 
   /pump@3.0.0:
     resolution: {integrity: sha512-LwZy+p3SFs1Pytd/jYct4wpv49HiYCqd9Rlc5ZVdk0V+8Yzv6jR5Blk3TRmPL1ft69TxP0IMZGJ+WPFU2BFhww==}

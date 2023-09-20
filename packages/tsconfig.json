@@ -38,6 +38,12 @@
       "path": "did-provider-lto"
     },
     {
+      "path": "did-provider-oyd"
+    },
+    {
+      "path": "did-resolver-oyd"
+    },
+    {
       "path": "mnemonic-seed-manager"
     }
   ]
